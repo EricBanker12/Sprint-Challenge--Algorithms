@@ -100,6 +100,7 @@ class SortingRobot:
         while self.can_move_left():
             self.move_left()
 
+        # Insertion Sort method
         self.insertion_sort()
 
     def insertion_sort(self):
@@ -111,13 +112,16 @@ class SortingRobot:
             # insert the item where it belongs
             while True:
                 self.move_left()
+                # if less than item at this index, continue left
                 if self.compare_item() == -1:
                     if self.can_move_left():
                         continue
                     else:
+                        # swap if index 0
                         self.swap_item()
                         break
-                else:
+                # if not less than item at this index, go right then swap
+                else: 
                     self.move_right()
                     self.swap_item()
                     break
