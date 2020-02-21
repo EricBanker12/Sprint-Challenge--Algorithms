@@ -17,7 +17,7 @@ b)  sum = 0 # O(1)
         j *= 2 # j = 2^L
         sum += 1
 ```
-The code loops through 0 to n and increments a variable log(n)/log(2) times each loop. Thus the run-time complexity is O(n\*log n) because the nested loop will run `n\*log(n)/log(2)` times.
+The code loops through 0 to n and increments a variable log(n)/log(2) times each loop. Thus the run-time complexity is O(n\*log n) because the nested loop will run `n*log(n)/log(2)` times.
 
 ```python
 c)  def bunnyEars(bunnies):

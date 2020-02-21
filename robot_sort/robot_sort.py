@@ -130,6 +130,29 @@ class SortingRobot:
                 self.move_right()
                 self.swap_item()
 
+    # def merge_sort(self):
+    #     """Sort the robot's list with merge sort"""
+    #     # get list length
+    #     for length in range(1, 2^31 - 1):
+    #         if not self.can_move_right():
+    #             # get segment length: 2^n
+    #             for n in range(30):
+    #                 # for each segment
+    #                 for s in range(1 + length//(2**n)):
+    #                     # merge segments
+    #                     self.swap_item()
+    #                     for i in range(n):
+    #                         self.move_left()
+    #                     if self.compare_item() == -1:
+    #                         self.swap_item()
+    #                     self.move_right()
+    #                     self.swap_item()
+    #                     while self.compare_item() != None:
+    #                         self.move_right()
+    #                         self.swap_item()
+    #         else:
+    #             self.move_right()
+
 if __name__ == "__main__":
     # Test our your implementation from the command line
     # with `python robot_sort.py`
